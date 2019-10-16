@@ -1,0 +1,51 @@
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top  ">
+    <!-- this is brand name -->
+    <a href="#" title="" class="navbar-brand text-warning">Rao Bilal</a>
+    <!-- end brand name -->
+    
+    <!-- toggle button -->
+    <div class="navbar-toggler" data-toggle="collapse" data-target="#navkiid">
+        <span class="navbar-toggler-icon"></span>
+    </div>
+    <!-- end btn -->
+
+    <div class="collpase navbar-collapse" id="navkiid">
+        
+    
+    <ul class="navbar-nav ml-auto text-center">
+        <li class="nav-item">
+            <a [routerLink]="['/home']"  class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a [routerLink]="['/product']" class="nav-link">Product</a>
+        </li>
+        
+        <!-- this list for dropdown menu -->
+        <li class="nav-item ">
+            <a [routerLink]="['/web-designing']"  class="nav-link ">Web Designing</a>
+        </li>
+        <!-- end list -->
+
+        <li class="nav-item">
+            <a [routerLink]="['/angular']" class="nav-link">Angular</a>
+        </li>
+
+        <li class="nav-item">
+            <a [routerLink]="['/about-us']" class="nav-link">About Us</a>
+        </li>
+
+        <li class="nav-item">
+            <a [routerLink]="['/contect-us']" class="nav-link">Contect Us</a>
+        </li>
+    </ul>
+
+    </div>
+</nav>
+<br><br>
+
+
+
+<!-- this router outlet -->
+<router-outlet></router-outlet>
